@@ -4,7 +4,6 @@ typedef long long ll;
 //dijkstra's
 
 int main() {
-    //ifstream in("susinput.txt");
     int N,M; cin>>N>>M;
     vector<vector<pair<ll,ll>>> adj(N+1);
     while(M--) {
