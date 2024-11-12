@@ -20,7 +20,6 @@ int f(int i) {
 }
 
 int main() {
-    //ifstream in("susinput.txt");
     int N,M; cin>>N>>M;
     for(int a,b,i=0; i<M; i++) {
         cin>>a>>b;
