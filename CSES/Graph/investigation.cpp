@@ -20,7 +20,6 @@ Cases:
 */
 
 int main() {
-    //ifstream in("susinput.txt");
     int N,M; cin>>N>>M;
     vector<pll> adj[N+1];
     while(M--) {
