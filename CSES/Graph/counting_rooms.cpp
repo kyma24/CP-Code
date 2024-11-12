@@ -2,8 +2,7 @@
 #include <vector>
 #include <string>
 using namespace std;
-// dfs is not updating the map, but i put a reference
-// figure out why.
+
 int n,m;
 void dfs(int i, int j, vector<vector<char>> &mp) {
     if (!(i<0 || i>=n || j<0 || j>=m || mp[i][j]=='#')) {
