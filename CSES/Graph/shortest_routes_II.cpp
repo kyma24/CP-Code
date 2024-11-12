@@ -3,7 +3,6 @@ using namespace std;
 typedef long long ll;
 
 int main() {
-    //ifstream in("susinput.txt");
     int N,M,Q; cin>>N>>M>>Q;
     vector<vector<ll>> dist(N+1,vector<ll>(N+1,1e12));
     for(ll a,b,c,i=0; i<M; i++) {
