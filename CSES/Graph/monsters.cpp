@@ -78,7 +78,6 @@ bool bfsolve(int s, int e) {
 }
 
 int main() {
-    //ifstream in("test_input.txt");
     cin>>N>>M;
     vector<pair<int,int>> mons;
     pair<int,int> start;
@@ -122,14 +121,4 @@ int main() {
         cout<<res.size()<<endl;
         for(int i=res.size()-1; i>=0; i--) cout<<res[i];
     } else cout<<"NO"<<endl;
-
-    /*
-    // flood fill result
-    if(ffsolve(start.first,start.second,0)) {
-        cout<<"YES"<<endl<<res.size()-1<<endl;
-        for(int i=1; i<res.size(); i++) cout<<res[i];
-    } else {
-        cout<<"NO";
-    }
-    */
 }
