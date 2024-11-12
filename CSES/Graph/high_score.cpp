@@ -30,7 +30,6 @@ void rdfs(int i) {
 }
 
 int main() {
-    //ifstream in("susinput.txt");
     int M; cin>>N>>M;
     vector<edge> edges; edge tmp;
     while(M--) {
