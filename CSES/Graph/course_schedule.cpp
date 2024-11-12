@@ -18,7 +18,6 @@ bool topo(int i) {
 }
 
 int main() {
-    //ifstream in("susinput.txt");
     int N,M; cin>>N>>M;
     int a,b;
     while(M--) {
