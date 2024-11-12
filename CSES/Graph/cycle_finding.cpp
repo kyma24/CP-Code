@@ -3,7 +3,6 @@ using namespace std;
 typedef long long ll;
 
 int main() {
-    //ifstream in("susinput.txt");
     int N,M; cin>>N>>M;
     vector<vector<ll>> edges;
     for(ll a,b,c,i=0; i<M; i++) {
