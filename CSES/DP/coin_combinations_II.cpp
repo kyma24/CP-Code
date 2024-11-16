@@ -29,3 +29,19 @@ int main() {
     }
     cout<<dp[n-1][x];
 }
+
+int optimized() {
+    int mod=1e9+7;
+    int n,x; cin>>n>>x;
+    vector<ll>c(n);
+    for(int i=0; i<n; i++) cin>>c[i];
+
+    vector<ll> dp(x+1);
+    dp[0]=1;
+    for(int i=0; i<n; i++) {
+        for(int aim=1; aim<=x; aim++) {
+            if(c[i]<=aim) dp[aim]=(dp[aim]+dp[aim-c[i]])%mod;
+        }
+    }
+    cout<<dp[x];
+}
