@@ -26,7 +26,7 @@ int main() {
         project[compress[b[i]]].emplace_back(compress[a[i]],p[i]);
     }
     vector<long long> dp(coords,0);
-    for(int i=0; i< oords; i++) {
+    for(int i=0; i<coords; i++) {
         if(i>0) dp[i]=dp[i-1];
         for(auto p:project[i]) {
             dp[i]=max(dp[i],dp[p.first]+p.second);
