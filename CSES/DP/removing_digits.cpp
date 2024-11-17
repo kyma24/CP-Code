@@ -20,15 +20,15 @@ int main() {
     vector<int> dp(n+1);
     //cout<<f(n,dp);
     dp[0]=0;
-    for(int curr=1; curr<=n; curr++) {
-        string s=to_string(curr);
+    for(int cur=1; cur<=n; cur++) {
+        string s=to_string(cur);
         int mmin=1e6+1;
         for(int i=0; i<(s.length()); i++) {
             if(s[i]!='0') {
-                mmin = min(mmin,dp[curr-(int)(s[i]-'0')]);
+                mmin = min(mmin,dp[cur-(int)(s[i]-'0')]);
             }
         }
-        dp[curr]=mmin+1;
+        dp[cur]=mmin+1;
     }
     cout<<dp[n];
 }
