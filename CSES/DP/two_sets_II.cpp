@@ -20,15 +20,15 @@ int main() {
     else {
         int aim=n*(n+1)/4;
         //cout<<(f(n,aim)/2)%mod<<endl;
-        for(int i=1; i<=n; i++) {
+        for(int i=0; i<=n; i++) {
             dp[i][0]=1;
         }
-        dp[1][1]=1;
+        
         for(int i=1; i<=n; i++) {
             for(int a=1; a<=aim; a++) {
                 dp[i][a]=(((a-i<0)?0:dp[i-1][a-i])+dp[i-1][a])%mod;
             }
         }
-        cout<<dp[n][aim]<<endl;
+        cout<<(dp[n][aim]/2)<<endl;
     }
 }
